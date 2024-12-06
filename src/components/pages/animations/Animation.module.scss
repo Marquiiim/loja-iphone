@@ -1,0 +1,103 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    & .list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+
+        & .item {
+            opacity: 0;
+            transform: translateX(100%);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+
+            & .iphone-img {
+
+                & img {
+                    transform: rotate(0deg);
+                    width: 600px;
+                    transition: transform 0.5s ease, opacity 0.5s ease;
+                }
+            }
+
+            & .content {
+                position: absolute;
+                bottom: 10rem;
+                right: 18rem;
+                transform: translateX(200px);
+                transition: transform 0.5s ease, opacity 0.5s ease;
+                opacity: 0;
+
+                & .cellInformation,
+                h2,
+                .description,
+                .more {
+                    opacity: 0;
+                    transform: translateX(200px);
+                    transition: opacity 0.7s ease, transform 0.7s ease;
+                }
+
+                & h2 {
+                    transition-delay: 0.5s;
+                }
+
+                & .description {
+                    transition-delay: 0.7s;
+                }
+
+                & .more {
+                    transition-delay: 0.9s;
+                }
+            }
+        }
+
+        & .active {
+            opacity: 1;
+            transform: translateX(0);
+
+            & .iphone-img {
+                & img {
+                    transform: rotate(-20deg);
+                    opacity: 1;
+                }
+            }
+
+            & .content {
+                opacity: 1;
+                transform: translateX(0);
+
+                & .cellInformation,
+                h2,
+                .description,
+                .more {
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+            }
+        }
+    }
+
+    & .arrow {
+        position: absolute;
+        top: 50%;
+        z-index: 10;
+        cursor: pointer;
+        color: white;
+    }
+
+    & .left-arrow {
+        left: 10px;
+        transform: translateY(-50%);
+    }
+
+    & .right-arrow {
+        right: 10px;
+        transform: translateY(-50%);
+    }
+}

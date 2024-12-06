@@ -1,0 +1,13 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+html,
+body,
+#root {
+  background: radial-gradient(circle, #d14d45, #8e3f34);
+  height: 100%;
+}
