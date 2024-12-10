@@ -37,11 +37,11 @@
 }
 .container .content .catalog_image {
   width: 100%;
-  animation: slideInFromRight 1s ease-in-out forwards;
 }
-.container .content .catalog_image img {
+.container .content .catalog_image .phones {
   max-width: 110vh;
   height: auto;
+  animation: slideInFromRight 1s ease-in-out forwards;
 }
 .container .content .button_prev,
 .container .content .button_next {

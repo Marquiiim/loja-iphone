@@ -9,19 +9,29 @@ import styles from './Structure.module.scss';
 const AnimationHome = () => {
 
     const catalog = [Iphone1, Iphone2, Iphone3, Iphone4]
+    const [index, setIndex] = useState(0)
 
+    function nextPhoto() {
+        setIndex((prevIndex) => (prevIndex + 1) % catalog.length)
+    }
+
+    function prevPhoto() {
+        setIndex((prevIndex) => (prevIndex - 1 + catalog.length) % catalog.length)
+    }
 
     return (
         <section className={styles.container}>
             <div className={styles.content}>
                 <button className={styles.button_prev}>
-                    <SlArrowLeftCircle size='40' />
+                    <SlArrowLeftCircle size='40' onClick={prevPhoto} />
                 </button>
                 <figure className={styles.catalog_image}>
-                    <img src={Iphone1} alt='Iphone' />
+                    <img src={catalog[index]}
+                    alt='Catalog'
+                    className={styles.phones}/>
                 </figure>
                 <button className={styles.button_next}>
-                    <SlArrowRightCircle size='40' />
+                    <SlArrowRightCircle size='40' onClick={nextPhoto} />
                 </button>
                 <div className={styles.informations_and_more}>
                     <p className={styles.description_product}>

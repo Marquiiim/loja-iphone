@@ -17,11 +17,11 @@
 
         & .catalog_image {
             width: 100%;
-            animation: slideInFromRight 1s ease-in-out forwards;
 
-            & img {
+            & .phones {
                 max-width: 110vh;
                 height: auto;
+                animation: slideInFromRight 1s ease-in-out forwards;
             }
         }
 
