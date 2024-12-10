@@ -1,0 +1,13 @@
+.container_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.container_block .content_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: white;
+}/*# sourceMappingURL=Catalog.module.css.map */

@@ -1,7 +1,9 @@
+import CatalogBlock from '../layout/CatalogStructure'
+
 function Catalog() {
 
     return (
-        <>Olá 2</>
+        <CatalogBlock />
     )
 }
 
