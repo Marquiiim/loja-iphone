@@ -1,9 +1,9 @@
-import CatalogBlock from '../layout/CatalogStructure'
+import CatalogBlock from './Products'
 
 function Catalog() {
 
     return (
-        <CatalogBlock />
+            <CatalogBlock />
     )
 }
 

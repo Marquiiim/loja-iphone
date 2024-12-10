@@ -1,0 +1,20 @@
+.container_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  padding-top: 8rem;
+}
+.container_block .content_block {
+  display: grid;
+  grid-template-columns: repeat(4, 4fr);
+  padding: 40px;
+  max-width: 1200px;
+  border-radius: 10px;
+  background-color: white;
+}
+.container_block .content_block img {
+  max-width: 300px;
+  width: 100%;
+}/*# sourceMappingURL=Products.module.css.map */
