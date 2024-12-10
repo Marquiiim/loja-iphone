@@ -9,8 +9,6 @@ import styles from './Structure.module.scss';
 const AnimationHome = () => {
 
     const catalog = [Iphone1, Iphone2, Iphone3, Iphone4]
-    const [next, setNext] = useState(0)
-    const [prev, sePrev] = useState(0)
 
 
     return (
