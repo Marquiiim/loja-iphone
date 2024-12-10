@@ -3,6 +3,8 @@
     height: 5.5rem;
     display: flex;
     align-items: center;
+    position: fixed;
+    z-index: 999;
 
     & .logo {
         width: 50%;
