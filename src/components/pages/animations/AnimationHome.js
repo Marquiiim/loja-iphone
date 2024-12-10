@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom'
 import { SlArrowLeftCircle, SlArrowRightCircle } from 'react-icons/sl';
 import Iphone1 from '../../../img/BlackiPhone.png';
 import Iphone2 from '../../../img/BlueiPhone.png';
@@ -68,7 +69,9 @@ const AnimationHome = () => {
                         Gravação de vídeo: em 4K a 24 fps, 25 fps, 30 fps ou 60 fps; 1080p a 25 fps, 30 fps ou 60 fps;
                         720p a 30 fps
                     </p>
-                    <button className={`${styles.more} ${styles[descriptionMore]}`}>Saiba Mais</button>
+                    <Link to='/catalog_home'>
+                        <button className={`${styles.more} ${styles[descriptionMore]}`}>Saiba Mais</button>
+                    </Link>
                 </div>
             </div>
         </section>
