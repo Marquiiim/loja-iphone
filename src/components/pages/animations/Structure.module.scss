@@ -21,7 +21,18 @@
             & .phones {
                 max-width: 110vh;
                 height: auto;
+            }
+
+            & .active {
                 animation: slideInFromRight 1s ease-in-out forwards;
+            }
+
+            & .inactive {
+                animation: slideOutToLeft 1s ease-in-out forwards;
+            }
+
+            & .reset {
+                animation: slideOutToLeft 1s ease-in-out forwards
             }
         }
 
@@ -54,7 +65,18 @@
                 max-width: 25rem;
                 font-size: .8rem;
                 color: white;
+            }
+
+            & .desc_active {
                 animation: fadeIn 1s ease-in-out forwards;
+            }
+
+            & .desc_inactive {
+                animation: fadeOut 1s ease-in-out forwards;
+            }
+
+            & .desc_reset {
+                animation: fadeOut 1s ease-in-out forwards;
             }
 
             & .more {
@@ -65,7 +87,6 @@
                 width: 10rem;
                 background: transparent;
                 cursor: pointer;
-                animation: fadeIn 1s ease-in-out forwards;
 
                 &:hover {
                     backdrop-filter: blur(5px);
@@ -74,6 +95,18 @@
 
                 &:active {
                     background-color: rgba(255, 255, 255, 0.292);
+                }
+
+                & .desc_active {
+                    animation: fadeIn 1s ease-in-out forwards;
+                }
+
+                & .desc_inactive {
+                    animation: fadeOut 1s ease-in-out forwards;
+                }
+
+                & .desc_reset {
+                    animation: fadeOut 1s ease-in-out forwards;
                 }
             }
         }

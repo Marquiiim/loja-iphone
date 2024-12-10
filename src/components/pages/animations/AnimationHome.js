@@ -10,13 +10,37 @@ const AnimationHome = () => {
 
     const catalog = [Iphone1, Iphone2, Iphone3, Iphone4]
     const [index, setIndex] = useState(0)
+    const [phoneAnimation, setPhoneAnimation] = useState('active')
+    const [descriptionMore, setDescriptionMore] = useState('desc_active')
+
+    const resetAnimation = () => {
+        setPhoneAnimation('reset');
+        setDescriptionMore('desc_reset');
+
+        setTimeout(() => {
+            setPhoneAnimation('active');
+            setDescriptionMore('desc_active');
+        }, 30);
+    };
 
     function nextPhoto() {
-        setIndex((prevIndex) => (prevIndex + 1) % catalog.length)
+        setPhoneAnimation('active')
+        setDescriptionMore('desc_active')
+
+        setTimeout(() => {
+            setIndex((prevIndex) => (prevIndex + 1) % catalog.length)
+            resetAnimation()
+        }, 250)
     }
 
     function prevPhoto() {
-        setIndex((prevIndex) => (prevIndex - 1 + catalog.length) % catalog.length)
+        setPhoneAnimation('inactive')
+        setDescriptionMore('desc_inactive')
+
+        setTimeout(() => {
+            setIndex((prevIndex) => (prevIndex - 1 + catalog.length) % catalog.length)
+            resetAnimation()
+        }, 250)
     }
 
     return (
@@ -27,14 +51,14 @@ const AnimationHome = () => {
                 </button>
                 <figure className={styles.catalog_image}>
                     <img src={catalog[index]}
-                    alt='Catalog'
-                    className={styles.phones}/>
+                        alt='Catalog'
+                        className={`${styles.phones} ${styles[phoneAnimation]}`} />
                 </figure>
                 <button className={styles.button_next}>
                     <SlArrowRightCircle size='40' onClick={nextPhoto} />
                 </button>
                 <div className={styles.informations_and_more}>
-                    <p className={styles.description_product}>
+                    <p className={`${styles.description_product} ${styles[descriptionMore]}`}>
                         Display: 6,1 polegadas
                         Processador: A15 Bionic
                         Memória: 6GB
@@ -44,7 +68,7 @@ const AnimationHome = () => {
                         Gravação de vídeo: em 4K a 24 fps, 25 fps, 30 fps ou 60 fps; 1080p a 25 fps, 30 fps ou 60 fps;
                         720p a 30 fps
                     </p>
-                    <button className={styles.more}>Saiba Mais</button>
+                    <button className={`${styles.more} ${styles[descriptionMore]}`}>Saiba Mais</button>
                 </div>
             </div>
         </section>
