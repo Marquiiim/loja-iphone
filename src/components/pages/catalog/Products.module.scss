@@ -1,0 +1,42 @@
+.container_block {
+
+    .content_block {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        padding: 40px;
+        border-radius: 15px;
+        background-color: white;
+
+        & img {
+            max-width: 300px;
+            width: 100%;
+            transition: transform 0.5s ease-in-out;
+
+            &:hover {
+                transform: rotate(20deg);
+            }
+        }
+
+        & .buy_button {
+            width: 100%;
+            padding: .5rem;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.9;
+            }
+
+            &:active {
+                opacity: 0.8;
+            }
+        }
+
+        & .more_informations_product {
+            cursor: pointer;
+        }
+    }
+}

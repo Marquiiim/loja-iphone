@@ -5,7 +5,7 @@ import Iphone1 from '../../../img/BlackiPhone.png';
 import Iphone2 from '../../../img/BlueiPhone.png';
 import Iphone3 from '../../../img/GreeniPhone.png';
 import Iphone4 from '../../../img/YellowiPhone.png';
-import styles from './Structure.module.scss';
+import styles from './Structure.module.css';
 
 const AnimationHome = () => {
 
