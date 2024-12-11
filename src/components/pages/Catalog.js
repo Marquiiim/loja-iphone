@@ -1,4 +1,4 @@
-import CatalogBlock from './catalog/Products'
+import CatalogBlock from './products_catalog/Products'
 import styles from './Catalog.module.css'
 
 function Catalog() {

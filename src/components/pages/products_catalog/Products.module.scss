@@ -1,3 +1,5 @@
+@import './animation_button';
+
 .container_block {
 
     .content_block {
@@ -7,7 +9,12 @@
         gap: 13px;
         padding: 40px;
         border-radius: 15px;
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0.251);
+
+        & h2 {
+            font-weight: 500;
+            color: white;
+        }
 
         & img {
             max-width: 300px;
@@ -19,12 +26,27 @@
             }
         }
 
+        & .price_buy {
+            max-width: 300px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.533);
+        }
+
+        & .buy_button.visible {
+            opacity: 1;
+            visibility: visible;
+            animation: onVisibili 0.5s ease-in-out forwards;
+        }
+
         & .buy_button {
-            width: 100%;
+            width: 220px;
             padding: .5rem;
             border-radius: 10px;
             border: none;
             cursor: pointer;
+            visibility: hidden;
+            opacity: 0;
+            animation: none;
 
             &:hover {
                 opacity: 0.9;
@@ -36,8 +58,14 @@
         }
 
         & .more_informations {
+            display: flex;
+            gap: 10px;
             cursor: pointer;
             font-size: .97rem;
+
+            & .arrow {
+                margin-top: 3px;
+            }
         }
     }
 }

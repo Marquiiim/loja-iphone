@@ -3,12 +3,14 @@
         "animations",
         "Bionic",
         "calculation",
+        "ease",
         "gradient",
         "informations",
         "Marquim",
         "pages",
         "phones",
         "Photo",
-        "Slider"
+        "Slider",
+        "Visibili"
     ]
 }
