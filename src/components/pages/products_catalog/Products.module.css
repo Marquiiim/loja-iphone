@@ -8,6 +8,9 @@
     opacity: 1;
   }
 }
+.container_block {
+  z-index: 999;
+}
 .container_block .content_block {
   display: flex;
   align-items: center;
@@ -24,10 +27,7 @@
 .container_block .content_block img {
   max-width: 300px;
   width: 100%;
-  transition: transform 0.5s ease-in-out;
-}
-.container_block .content_block img:hover {
-  transform: rotate(20deg);
+  z-index: 1;
 }
 .container_block .content_block .price_buy {
   max-width: 300px;
