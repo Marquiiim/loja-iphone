@@ -4,7 +4,7 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        gap: 10px;
+        gap: 13px;
         padding: 40px;
         border-radius: 15px;
         background-color: white;
@@ -35,8 +35,9 @@
             }
         }
 
-        & .more_informations_product {
+        & .more_informations {
             cursor: pointer;
+            font-size: .97rem;
         }
     }
 }
