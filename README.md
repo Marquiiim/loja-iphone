@@ -1,4 +1,7 @@
 # Loja de Celulares Interativa
+**Link**: https://marquiiim.github.io/loja-iphone/
+**!!!**HOSPEDAGEM COM ERRO, CLIQUE NAS OPÇÕES DO NAV PARA COMEÇAR A APARECER AS ESTILIZAÇÕES NA TELA (TRABALHANDO PARA CONSERTAR)**!!!**
+
 Bem-vindo ao repositório da **Loja de Celulares Interativa**, um projeto que oferece uma experiência dinâmica e moderna para exibir catálogos de celulares e interagir com os usuários. O site é composto por três páginas principais: **Home**, **Catálogo** e **Contato**.
 
 # Funcionalidades
