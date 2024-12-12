@@ -1,6 +1,6 @@
 import styles from './Products.module.css'
 
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 
 import { VscCheckAll } from "react-icons/vsc";
 import Iphone from '../../../img/BlackiPhone.png'
@@ -17,8 +17,8 @@ function CatalogStructure() {
     }
 
     return (
-        <div className={styles.container_block} onMouseEnter={handleMouseEnter} onMouseOut={handleMouseOut}>
-            <div className={styles.content_block}>
+        <div className={styles.container_block}>
+            <div className={styles.content_block} onMouseEnter={handleMouseEnter} onMouseOut={handleMouseOut}>
                 <img src={Iphone} alt='Iphone' />
                 <h2>
                     APPLE IPHONE 15 PRETO
@@ -29,7 +29,7 @@ function CatalogStructure() {
                     ou 12x de R$ 495,28
                 </span>
                 <button className={`${styles.buy_button} ${isButtonVisible ? styles.visible : ''}`}>
-                    Comprar agora <span><VscCheckAll /></span>
+                    Comprar agora <span><VscCheckAll className={styles.icon} /></span>
                 </button>
             </div>
         </div>

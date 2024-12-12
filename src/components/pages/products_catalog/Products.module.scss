@@ -1,7 +1,6 @@
 @import './animation_button';
 
 .container_block {
-    z-index: 999;
 
     .content_block {
         display: flex;
@@ -11,22 +10,28 @@
         padding: 40px;
         border-radius: 15px;
         background-color: rgba(255, 255, 255, 0.251);
+        overflow: hidden;
 
         & h2 {
             font-weight: 500;
             color: white;
+            text-align: center;
+            margin: 0;
+            pointer-events: none;
         }
 
         & img {
             max-width: 300px;
+            height: auto;
             width: 100%;
-            z-index: 1;
+            pointer-events: none;
         }
 
         & .price_buy {
-            max-width: 300px;
+            max-width: 270px;
             text-align: center;
             color: rgba(255, 255, 255, 0.533);
+            pointer-events: none;
         }
 
         & .buy_button.visible {
@@ -60,7 +65,7 @@
             cursor: pointer;
             font-size: .97rem;
 
-            & .arrow {
+            & .icon {
                 margin-top: 3px;
             }
         }
