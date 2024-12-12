@@ -52,12 +52,6 @@
   opacity: 0;
   animation: none;
 }
-.container_block .content_block .buy_button:hover {
-  opacity: 0.9;
-}
-.container_block .content_block .buy_button:active {
-  opacity: 0.8;
-}
 .container_block .content_block .more_informations {
   display: flex;
   gap: 10px;

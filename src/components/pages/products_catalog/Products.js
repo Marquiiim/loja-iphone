@@ -9,16 +9,12 @@ function CatalogStructure() {
 
     const [isButtonVisible, setIsButtonVisible] = useState(false)
 
-    const handleMouseEnter = () => {
-        setIsButtonVisible(true)
-    }
-    const handleMouseOut = () => {
-        setIsButtonVisible(false)
-    }
+    const handleMouseEnter = () => setIsButtonVisible(true)
+    const handleMouseLeave = () => setIsButtonVisible(false)
 
     return (
         <div className={styles.container_block}>
-            <div className={styles.content_block} onMouseEnter={handleMouseEnter} onMouseOut={handleMouseOut}>
+            <div className={styles.content_block} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                 <img src={Iphone} alt='Iphone' />
                 <h2>
                     APPLE IPHONE 15 PRETO
