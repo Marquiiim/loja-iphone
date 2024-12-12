@@ -1,0 +1,21 @@
+.footer_container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.footer_container .footer_content ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.footer_container .footer_content ul li {
+  list-style: none;
+  text-align: center;
+  color: white;
+}
+.footer_container .footer_content ul li span {
+  cursor: pointer;
+}
+.footer_container .footer_content ul li span .icon_instagram:hover {
+  color: #d14d45;
+}/*# sourceMappingURL=Footer.module.css.map */

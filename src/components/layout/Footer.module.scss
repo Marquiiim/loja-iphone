@@ -1,0 +1,31 @@
+.footer_container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    & .footer_content {
+        & ul {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+
+            & li {
+                list-style: none;
+                text-align: center;
+                color: white;
+
+                & span {
+                    cursor: pointer;
+
+                    & .icon_instagram {
+
+                        &:hover {
+                            color: #d14d45;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
